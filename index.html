@@ -80,7 +80,8 @@ nav .side a.btn:hover{color:#14231f}
 .hero .big{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
 
 /* coaching — crema */
-.coach{background:var(--paper);color:var(--ink)}
+.coach{background:var(--paper);color:var(--ink);padding-top:clamp(130px,13vw,170px)}
+.coach h2.big2{font-size:clamp(50px,7vw,92px)}
 .coach .placa{color:var(--mintD)}
 .coach .lead{color:var(--ink2)}
 .coach .scrib{stroke:var(--mintD)}
@@ -94,7 +95,7 @@ nav .side a.btn:hover{color:#14231f}
 .chain.new .node .k{color:var(--mint)}
 .node .v{font-size:clamp(28px,3vw,38px);font-weight:700;line-height:1.02;margin-top:10px;letter-spacing:-.5px}
 .arrow{align-self:center;display:grid;place-items:center;font-size:0}
-.arrow::before{content:"";width:56px;height:28px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28'%3E%3Cpath d='M3 18c10-10 22 4 32-4 5-4 9-6 16-4M43 5l9 5-7 8' fill='none' stroke='%234a6a52' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.arrow::before{content:"";width:48px;height:16px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 16'%3E%3Cpath d='M2 8H44M37 2l7 6-7 6' fill='none' stroke='%234a6a52' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
 .cnote{margin:28px 0 0;font-size:clamp(22px,2.6vw,30px);font-weight:500;line-height:1.3;min-height:2.6em;max-width:46ch;letter-spacing:-.3px}
 .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:52px}
 .tabs button{min-height:46px;padding:0 20px;border-radius:999px;background:transparent;border:1.5px solid var(--ruleL);color:var(--ink2);font:600 15px "Outfit",sans-serif;cursor:pointer}
@@ -176,36 +177,18 @@ footer{background:var(--bg2);color:var(--cream2);text-align:center;font-size:14p
  <nav aria-label="Principal">
  <div class="row">
   <div class="side l"><a href="#coaching">Coaching</a><a href="#sesiones">Sesiones</a></div>
-  <a class="mono" href="#inicio" aria-label="Eze Martinengo, inicio">EM</a>
+  <a class="mono" href="#coaching" aria-label="Eze Martinengo, inicio">EM</a>
   <div class="side r"><a href="#sobre-mi">Sobre mí</a><a href="#contacto">Contacto</a><a class="btn b-fill" href="#sesiones">Empezar</a></div>
  </div>
 </nav>
 
-<header class="hero" id="inicio">
- <svg class="big" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
- </svg>
- <div class="in">
-  <div class="l">
-   <span class="epi"><em>Coaching ontológico</em> · Online</span>
-   <p class="lead">Sesiones individuales por videollamada para trabajar sobre un objetivo concreto. La primera charla no tiene costo.</p>
-   <svg viewBox="0 0 220 60" width="200" height="56" aria-hidden="true" style="margin-top:14px;overflow:visible"><path class="scrib draw d2" pathLength="1" d="M4 30 C50 10 90 50 140 30 S200 26 214 30 M200 18 L215 30 L201 42"/></svg>
-  </div>
-  <div class="c">
-   <h1><span class="nw">Sesiones de</span> <span class="loop">coaching<svg viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true"><path class="scrib draw" pathLength="1" d="M330 18 C220 -6 40 6 18 70 C0 128 160 156 280 146 C370 138 404 96 380 58 C360 26 300 14 240 16"/></svg></span></h1>
-  </div>
-  <div class="cta">
-   <a class="btn b-fill" href="#sesiones">Empezar</a>
-   <a class="btn" href="#coaching">¿Qué es el coaching?</a>
-  </div>
-  <div class="r"><div class="creds"><span>Coach Ontológico Profesional ACTP · ICF</span><span>Estudiante de Psicología · Universidad Favaloro</span></div></div>
- </div>
-</header>
+
 
 <section class="sec coach" id="coaching">
  <div class="in">
   <div class="head">
-   <span class="placa">¿Qué es el coaching ontológico?</span>
-   <h2>Cambiar la mirada para cambiar los <span class="mark">resultados<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path class="scrib" d="M4 12 C80 2 160 18 296 8"/></svg></span></h2>
+   <span class="placa">Coaching ontológico · Online</span>
+   <h2 class="big2">Cambiar la mirada para cambiar los <span class="mark">resultados<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path class="scrib" d="M4 12 C80 2 160 18 296 8"/></svg></span></h2>
    <p class="lead" style="margin:0">Tocá los botones para ver la idea en la que se basa.</p>
   </div>
   <div class="toggle" role="group" aria-label="Elegí una mirada">
